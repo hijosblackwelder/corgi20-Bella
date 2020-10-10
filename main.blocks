@@ -1,0 +1,181 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="hl2MpZ`vZb9;}hn_guI^">myCorg</variable><variable id="AG[Q+=48p?F(]{{$[2!c">projectile</variable><variable id="CYrS1*n0HX*5yq,zG%O%">mySprite</variable><variable id="O*9nmbQ*T/;!o(:9-ZAH">TreasureChest</variable><variable id="Cqa7*OIJK886+(%M}*J:">TreasureChest2</variable><variable type="KIND_SpriteKind" id=":}iy9wg52ahUmWe1MIO;">Player</variable><variable type="KIND_SpriteKind" id="wlUBQBmAlqWz$Z[XJ}AW">Projectile</variable><variable type="KIND_SpriteKind" id=":p?8c%-g!6$_@s;LB},W">Food</variable><variable type="KIND_SpriteKind" id="I|Ugd$f(DEL:CU;B3|w(">Enemy</variable><variable type="KIND_SpriteKind" id="JO|%9!xV/@T=%JAvW3*%">Treasure</variable><variable type="KIND_SpriteKind" id="WN1j%@z?c*dht16hTMPM">Object</variable></variables><block type="pxt-on-start" id="BuUBG1Rc}KzLE{4tv(wM" x="0" y="0"><statement name="HANDLER"><block type="variables_set" id="3CjrvM`;Sz:7^(S~O=Hk"><field name="VAR" id="hl2MpZ`vZb9;}hn_guI^">myCorg</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="corgiCreate" id="+B/i8-1!fA9!zVc/.#lU"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="kind"><shadow type="spritekind" id="b.t`1:G}v5Hi3A|;5,K7"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="variables_set" id="T0zwEq`^dH]OFl7}xZ@/"><field name="VAR" id="O*9nmbQ*T/;!o(:9-ZAH">TreasureChest</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="{)KyIGl{]^uZVGRJCqaQ"><value name="img"><shadow type="screen_image_picker" id="GgVSc2XidAwJ0+ed3:HH"><field name="img">img`
+. . b b b b b b b b b b b b . . 
+. b e 4 4 4 4 4 4 4 4 4 4 e b . 
+b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
+b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
+b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
+b e e 4 4 4 4 4 4 4 4 4 4 e e b 
+b e e e e e e e e e e e e e e b 
+b e e e e e e e e e e e e e e b 
+b b b b b b b d d b b b b b b b 
+c b b b b b b c c b b b b b b c 
+c c c c c c b c c b c c c c c c 
+b e e e e e c b b c e e e e e b 
+b e e e e e e e e e e e e e e b 
+b c e e e e e e e e e e e e c b 
+b b b b b b b b b b b b b b b b 
+. b b . . . . . . . . . . b b . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind" id="}8H$})BgQ]q~Rke^mUKf"><field name="MEMBER">Treasure</field></shadow></value></block></value><next><block type="spritesetpos" id="-68!dUNJQ@)_WefY#?/U"><value name="sprite"><block type="variables_get" id="OR{SSJe4mnrbeIKLA,Nv"><field name="VAR" id="O*9nmbQ*T/;!o(:9-ZAH">TreasureChest</field></block></value><value name="x"><shadow type="positionPicker" id="V*[CRu{]/*If0U!31vHS"><field name="index">72</field></shadow></value><value name="y"><shadow type="positionPicker" id="eiTcO([yCtm?h-:)(?a9"><field name="index">8</field></shadow></value><next><block type="horizontalMovement" id="!phb6We~Mlc)nCR`bkVK"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="corgio"><block type="variables_get" id="{YQ/#tW!YAiif^MS`bqa"><field name="VAR" id="hl2MpZ`vZb9;}hn_guI^">myCorg</field></block></value><next><block type="verticalMovement" id="}%E}m;v}pob%p?dTwz^%"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="corgio"><block type="variables_get" id="E-`r`a+.pfvrwSoEbo^="><field name="VAR" id="hl2MpZ`vZb9;}hn_guI^">myCorg</field></block></value><next><block type="updateSprite" id=":sjr!Shz(tVgnjVmcTId"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="corgio"><block type="variables_get" id="DK3.z:NeO1wa^jUWRyhf"><field name="VAR" id="hl2MpZ`vZb9;}hn_guI^">myCorg</field></block></value><next><block type="tilemap_editor" id="5Hxd3HXu=agzny.i0DWq"><field name="tilemap">tiles.createTilemap(hex`1400080000000000000000000000000000000000000000000000000001010101010000010000000000000000000000000000000000000000000100000000000000000000000000000001000000000000010000000000000100010000000001000000000000010000000001000000000100000001000000000000000201000000000000000000000001000000000001010303030303030303030303030303030303030303`, img`
+. . . . . . . . . . . . . . . . . . . . 
+. . . . 2 2 2 2 2 . . 2 . . . . . . . . 
+. . . . . . . . . . . . . 2 . . . . . . 
+. . . . . . . . . 2 . . . . . . 2 . . . 
+. . . 2 . 2 . . . . 2 . . . . . . 2 . . 
+. . 2 . . . . 2 . . . 2 . . . . . . . . 
+2 . . . . . . . . . . . 2 . . . . . 2 2 
+. . . . . . . . . . . . . . . . . . . . 
+`, [myTiles.transparency16,sprites.builtin.forestTiles0,myTiles.tile1,sprites.dungeon.hazardLava1], TileScale.Sixteen)</field><next><block type="followCorgi" id="H/|y,HhGSx@^VHZc#%m|"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="corgio"><block type="variables_get" id="x.d~qy%qfsy/XaQ-OqIe"><field name="VAR" id="hl2MpZ`vZb9;}hn_guI^">myCorg</field></block></value><value name="on"><shadow type="toggleOnOff" id="DTTVIQHT$Y03h!tXiUOt"><field name="on">true</field></shadow></value><next><block type="hudsetScore" id="!Nlb_KcAM/7p6N6A~MAS"><value name="value"><shadow type="math_number" id="yQSx.$ag*dMW/8y)1|_h"><field name="NUM">0</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="spriteshittile" id="dp4OUg-=FP$IT.{t+/2;" x="20" y="860"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom" id="VDV/0Sg3*54BeApD0O,F"><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind" id="O2G@z[%~(w+]%#o=20Nn"><field name="MEMBER">Player</field></shadow></value><value name="tile"><shadow type="tileset_tile_picker" id=",gRJ#HqOg^3E`/3Wqwua"><field name="tile">myTiles.tile1</field></shadow></value><value name="HANDLER_DRAG_PARAM_location"><shadow type="argument_reporter_custom" id="g}2J_40Cc9#At=O4@y68"><mutation typename="tiles.Location"/><field name="VALUE">location</field></shadow></value><statement name="HANDLER"><block type="tilemap_editor" id="Zvay9lg65*`v$W97}!0="><field name="tilemap">tiles.createTilemap(hex`1400080000000000000000000000000000000000000000000004000000000401040101010000000000000000000000010000000000000000000000000004000001000000010000000000000000000001000000000000040000000000000001000000010001000000020100000001000004010000000100000000000001000000000001000000000001000000000001010303030303030303030303030303030303030303`, img`
+. . . . . . . . . . . . . . . . . . . . 
+. 2 . . . . 2 2 2 2 2 2 . . . . . . . . 
+. . . 2 . . . . . . . . . . . . . 2 . . 
+2 . . . 2 . . . . . . . . . . 2 . . . . 
+. . 2 . . . . . . . 2 . . . 2 . 2 . . . 
+. 2 . . . 2 . . 2 2 . . . 2 . . . . . . 
+2 . . . . . 2 . . . . . 2 . . . . . 2 2 
+. . . . . . . . . . . . . . . . . . . . 
+`, [myTiles.transparency16,myTiles.tile2,myTiles.tile3,sprites.dungeon.hazardLava1,myTiles.tile4], TileScale.Sixteen)</field><next><block type="spritedestroy" id="Ea_:e#![J+(PvnqCr.YA"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get" id="^1x5er`6^%7(0KS4w4;N"><field name="VAR" id="Cqa7*OIJK886+(%M}*J:">TreasureChest2</field></block></value><next><block type="variables_set" id="$LLAz(97=ieGy#Xp!KX0"><field name="VAR" id="O*9nmbQ*T/;!o(:9-ZAH">TreasureChest</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="uDFR@,u8pDUCfL4}}z5C"><value name="img"><shadow type="screen_image_picker" id="2j9YaxM=[O}^kVaO=0l!"><field name="img">img`
+. . b b b b b b b b b b b b . . 
+. b e 4 4 4 4 4 4 4 4 4 4 e b . 
+b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
+b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
+b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
+b e e 4 4 4 4 4 4 4 4 4 4 e e b 
+b e e e e e e e e e e e e e e b 
+b e e e e e e e e e e e e e e b 
+b b b b b b b d d b b b b b b b 
+c b b b b b b c c b b b b b b c 
+c c c c c c b c c b c c c c c c 
+b e e e e e c b b c e e e e e b 
+b e e e e e e e e e e e e e e b 
+b c e e e e e e e e e e e e c b 
+b b b b b b b b b b b b b b b b 
+. b b . . . . . . . . . . b b . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind" id="OuklG/)#h)$./rsi,Uh#"><field name="MEMBER">Treasure</field></shadow></value></block></value><next><block type="spritesetpos" id="Y`K{n6kxg4C1)P72qr;S"><value name="sprite"><block type="variables_get" id="@}_2pn[.8tN%og}f:x^`"><field name="VAR" id="O*9nmbQ*T/;!o(:9-ZAH">TreasureChest</field></block></value><value name="x"><shadow type="positionPicker" id="xZlx*Z`ZN!:6]i2fLK9r"><field name="index">168</field></shadow></value><value name="y"><shadow type="positionPicker" id="b:pS]L(q?WCp+fzu7pUL"><field name="index">8</field></shadow></value></block></next></block></next></block></next></block></statement></block><block type="spriteshittile" id=":Uus1qlj7N0DgyYkgI76" x="20" y="1240"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom" id="yVpw_X;XsQJ%=f5s*yt+"><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind" id="$Q$]bpv:b;so^}RUc:g)"><field name="MEMBER">Player</field></shadow></value><value name="tile"><shadow type="tileset_tile_picker" id="54%xfB#L02CS4;zXaRXy"><field name="tile">sprites.dungeon.hazardLava1</field></shadow></value><value name="HANDLER_DRAG_PARAM_location"><shadow type="argument_reporter_custom" id="f.u~XO1wHIS=!v9_qhrj"><mutation typename="tiles.Location"/><field name="VALUE">location</field></shadow></value><statement name="HANDLER"><block type="gameOver" id="V7vM2lE#xje^rlN,74Zr"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="win"><shadow type="toggleWinLose" id="{,b[zi,G]+U(tC!;]@;i"><field name="win">false</field></shadow></value></block></statement></block><block type="spriteshittile" id="I^p[oVI[Ty9^sCHN6w-#" x="20" y="1440"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom" id="Tp9;8.8iC]Rz+T+zl~FF"><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind" id="2@9L0%;8y^^=:}a5A,0V"><field name="MEMBER">Player</field></shadow></value><value name="tile"><shadow type="tileset_tile_picker" id="SE$qxOUrqG53O=C~!}=c"><field name="tile">myTiles.tile3</field></shadow></value><value name="HANDLER_DRAG_PARAM_location"><shadow type="argument_reporter_custom" id="HigUxf/3%~ysK=y*xH)S"><mutation typename="tiles.Location"/><field name="VALUE">location</field></shadow></value><statement name="HANDLER"><block type="tilemap_editor" id="EI/iAkQx+s%6=m2xk+_3"><field name="tilemap">tiles.createTilemap(hex`1400080000000006000000000000000000000000000000000000040202020203000000000000000000000000000000000000000000000600000000000000000000000000000000000000010000000000000000000000000100000006000000010000000000000000000004030000000403000000000100000600000701000000000100000000000000000004030000010505050505050505050505050505050505050505`, img`
+. . . . . . . . . . . . . . . . . . . . 
+. . 2 2 2 2 2 2 . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . 2 . . . . . . . . . 
+. . . 2 . . . . . . . 2 . . . . . . . . 
+. . 2 2 . . . 2 2 . . . . 2 . . . . . . 
+2 . . . . 2 . . . . . . . . . 2 2 . . 2 
+. . . . . . . . . . . . . . . . . . . . 
+`, [myTiles.transparency16,sprites.builtin.oceanSand0,sprites.builtin.oceanSand2,sprites.builtin.oceanSand3,sprites.builtin.oceanSand1,sprites.dungeon.hazardLava1,sprites.builtin.coral0,myTiles.tile5], TileScale.Sixteen)</field><next><block type="spritedestroy" id="PIyFT`7Zz%+13M7QR}K!"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get" id="b,571d[cOB}t!m{qz=7s"><field name="VAR" id="Cqa7*OIJK886+(%M}*J:">TreasureChest2</field></block></value><next><block type="variables_set" id="rT%d-#{O`/XrM+6[d9yU"><field name="VAR" id="O*9nmbQ*T/;!o(:9-ZAH">TreasureChest</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="ACP5tS^x*k?Jhna~*c*0"><value name="img"><shadow type="screen_image_picker" id="6ZI92(e%))~~lmCUe|PQ"><field name="img">img`
+. . b b b b b b b b b b b b . . 
+. b e 4 4 4 4 4 4 4 4 4 4 e b . 
+b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
+b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
+b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
+b e e 4 4 4 4 4 4 4 4 4 4 e e b 
+b e e e e e e e e e e e e e e b 
+b e e e e e e e e e e e e e e b 
+b b b b b b b d d b b b b b b b 
+c b b b b b b c c b b b b b b c 
+c c c c c c b c c b c c c c c c 
+b e e e e e c b b c e e e e e b 
+b e e e e e e e e e e e e e e b 
+b c e e e e e e e e e e e e c b 
+b b b b b b b b b b b b b b b b 
+. b b . . . . . . . . . . b b . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind" id="}ST74L+KdH:2rfH$YLN{"><field name="MEMBER">Treasure</field></shadow></value></block></value><next><block type="spritesetpos" id="KGhn_JQW]AS%pGKZXS{F"><value name="sprite"><block type="variables_get" id="WZ[I76;MEvCDLvLh!|Gd"><field name="VAR" id="O*9nmbQ*T/;!o(:9-ZAH">TreasureChest</field></block></value><value name="x"><shadow type="positionPicker" id=")$rN_LT58bYArW^,D#wM"><field name="index">40</field></shadow></value><value name="y"><shadow type="positionPicker" id="KIjX[4I=PVU#k@TO2649"><field name="index">8</field></shadow></value></block></next></block></next></block></next></block></statement></block><block type="spritesoverlap" id="s:J1cFerB9*nzCFx74[w" x="102" y="1828"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom" id="/R_O(gM,$0E(o,haTAkb"><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind" id="f[rp#`|S;E}4hFbSiX}n"><field name="MEMBER">Player</field></shadow></value><value name="HANDLER_DRAG_PARAM_otherSprite"><shadow type="argument_reporter_custom" id="U.FYz98[n:`%QeC^D1VS"><mutation typename="Sprite"/><field name="VALUE">otherSprite</field></shadow></value><value name="otherKind"><shadow type="spritekind" id="Q|]Ffi*U~OTaxM45uQZ7"><field name="MEMBER">Treasure</field></shadow></value><statement name="HANDLER"><block type="controls_if" id="uankhsKu%IMBX*h~i5y?"><mutation elseif="1" else="1"/><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="maplocationistile" id="q%e-]ma!x%n}c{auV-9Q"><value name="location"><shadow type="mapgettile" id="3lo9)gGCU]{`a.[mLD1k"><value name="col"><shadow type="math_number" id="S#N+9-=ZEk+;WcPVh$~["><field name="NUM">0</field></shadow></value><value name="row"><shadow type="math_number" id="kkS~9Xj)i0[H1jk#hE*j"><field name="NUM">6</field></shadow></value></shadow></value><value name="tile"><shadow type="tileset_tile_picker" id="JP]p}X6{X,2/;wDN|R8*"><field name="tile">sprites.builtin.forestTiles0</field></shadow></value></block></value><statement name="DO0"><block type="hudChangeScoreBy" id="KO7U}OmL[TY*ST/oazmD"><value name="value"><shadow type="math_number" id="x.i;ojhkb)@!u-bsAZ?R"><field name="NUM">50</field></shadow></value><next><block type="mixer_play_sound" id="lesR`@;t}P/hBl)Pl}qP"><field name="sound">music.magicWand</field><next><block type="spritedestroy" id="tyFRSku]?B;_%$RkJowc"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><field name="effect">effects.confetti</field><value name="sprite"><block type="variables_get" id="llEYtG2`,eKjgBM8BLwU"><field name="VAR" id="O*9nmbQ*T/;!o(:9-ZAH">TreasureChest</field></block></value><value name="duration"><shadow type="timePicker" id="2r8i7$UFX^~XBNfuQuX4"><field name="ms">500</field></shadow></value><next><block type="variables_set" id="`qc8~=gO4$c#*,aTy-Ap"><field name="VAR" id="Cqa7*OIJK886+(%M}*J:">TreasureChest2</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="6C^)XGrYW1w3hK/5d.Ta"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow><block type="screen_image_picker" id="|BEn;R}9|Nxz!hgdVbVE"><field name="img">img`
+. b b b b b b b b b b b b b b . 
+b e 4 4 4 4 4 4 4 4 4 4 4 4 4 b 
+b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
+b e e 4 4 4 4 4 4 4 4 4 4 e e b 
+b b b b b b b d d b b b b b b b 
+. b b b b b b c c b b b b b b . 
+b 5 c c c 5 b c c b c 5 5 5 c b 
+b 5 5 c 5 5 c b b c 5 5 5 5 5 b 
+b 5 2 5 9 5 5 5 c 5 3 5 5 9 9 b 
+b 7 5 5 5 9 5 5 5 5 5 2 5 9 5 b 
+b b b b b b b b b b b b b b b b 
+b e e e e e e e e e e e e e e b 
+b e e e e e e e e e e e e e e b 
+b c e e e e e e e e e e e e c b 
+b b b b b b b b b b b b b b b b 
+. b b . . . . . . . . . . b b . 
+`</field></block></value><value name="kind"><shadow type="spritekind" id="~qNuU~,)+WFt[b!zU2hy"><field name="MEMBER">Object</field></shadow></value></block></value><next><block type="spritesetpos" id="7)-qYs#oH`S]ugH|lVH*"><value name="sprite"><block type="variables_get" id="bN#o)BKS@Hcm8jCNZf]("><field name="VAR" id="Cqa7*OIJK886+(%M}*J:">TreasureChest2</field></block></value><value name="x"><shadow type="positionPicker" id="F@1#?H^0nv#Pk,Ey^%5y"><field name="index">72</field></shadow></value><value name="y"><shadow type="positionPicker" id="p?K)DrFRK^V-f}9;5zQ*"><field name="index">8</field></shadow></value></block></next></block></next></block></next></block></next></block></statement><value name="IF1"><block type="maplocationistile" id="-nh(NCf/pRCOQ]6u}_;+"><value name="location"><shadow type="mapgettile" id="1qp?b:S7-+zEfL$?B0-|"><value name="col"><shadow type="math_number" id="_;~2Ox,F-,n,y1=O)geh"><field name="NUM">0</field></shadow></value><value name="row"><shadow type="math_number" id="wp0z}qUyJo@=utP,Z*Si"><field name="NUM">6</field></shadow></value></shadow></value><value name="tile"><shadow type="tileset_tile_picker" id=")dibZYH-YH9p=LKHs2}D"><field name="tile">sprites.builtin.oceanSand0</field></shadow></value></block></value><statement name="DO1"><block type="hudChangeScoreBy" id="NL/9^I!s?B}S:,}Sj/iB"><value name="value"><shadow type="math_number" id=",-kx9*wdTpfR^v^[DKVl"><field name="NUM">50</field></shadow></value><next><block type="mixer_play_sound" id=";xQDikj8I(9q5AB-?$/K"><field name="sound">music.magicWand</field><next><block type="spritedestroy" id="J1u/`e;mg@1Gm@*U.lv~"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><field name="effect">effects.confetti</field><value name="sprite"><block type="variables_get" id="2p[MnJ+X#fg?|$58(*D."><field name="VAR" id="O*9nmbQ*T/;!o(:9-ZAH">TreasureChest</field></block></value><value name="duration"><shadow type="timePicker" id="rT!jF,F@/X$YRX|Re,~v"><field name="ms">500</field></shadow></value><next><block type="variables_set" id="0MWid1AH8j,@^?~..CK)"><field name="VAR" id="Cqa7*OIJK886+(%M}*J:">TreasureChest2</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="aZ$=,@gnI-Xpb|_.vSWk"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow><block type="screen_image_picker" id="$HB(K10TzSuq9pd]HDkh"><field name="img">img`
+. b b b b b b b b b b b b b b . 
+b e 4 4 4 4 4 4 4 4 4 4 4 4 4 b 
+b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
+b e e 4 4 4 4 4 4 4 4 4 4 e e b 
+b b b b b b b d d b b b b b b b 
+. b b b b b b c c b b b b b b . 
+b 5 c c c 5 b c c b c 5 5 5 c b 
+b 5 5 c 5 5 c b b c 5 5 5 5 5 b 
+b 5 2 5 9 5 5 5 c 5 3 5 5 9 9 b 
+b 7 5 5 5 9 5 5 5 5 5 2 5 9 5 b 
+b b b b b b b b b b b b b b b b 
+b e e e e e e e e e e e e e e b 
+b e e e e e e e e e e e e e e b 
+b c e e e e e e e e e e e e c b 
+b b b b b b b b b b b b b b b b 
+. b b . . . . . . . . . . b b . 
+`</field></block></value><value name="kind"><shadow type="spritekind" id="]^t$Gpx99WD#c,`$x-:v"><field name="MEMBER">Object</field></shadow></value></block></value><next><block type="spritesetpos" id="AC#j1+gTb_`fdZa{x+WN"><value name="sprite"><block type="variables_get" id="BhQ,XHgwEt9Hvxv]xV(4"><field name="VAR" id="Cqa7*OIJK886+(%M}*J:">TreasureChest2</field></block></value><value name="x"><shadow type="positionPicker" id="6XO]s~;)8R`#quE(6nEP"><field name="index">40</field></shadow></value><value name="y"><shadow type="positionPicker" id=";l))X:_tDCa|rfH[zeQ3"><field name="index">8</field></shadow></value></block></next></block></next></block></next></block></next></block></statement><statement name="ELSE"><block type="hudChangeScoreBy" id="sj9|W3:~nl|V#3U1S0F("><value name="value"><shadow type="math_number" id="TbSNhcTJap:_?k8bgJ+z"><field name="NUM">50</field></shadow></value><next><block type="mixer_play_sound" id="Zg+a}^M!0l*`JPB^UO:$"><field name="sound">music.magicWand</field><next><block type="spritedestroy" id="cJNao^PYsj1GnW!1zLV5"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><field name="effect">effects.confetti</field><value name="sprite"><block type="variables_get" id="sBaYZ+E3H)(}(,nItx?%"><field name="VAR" id="O*9nmbQ*T/;!o(:9-ZAH">TreasureChest</field></block></value><value name="duration"><shadow type="timePicker" id="4ZzfG{Wc1xbDirF$C0/^"><field name="ms">500</field></shadow></value><next><block type="variables_set" id="Nhdtx|UvnuoXnHkd6MD~"><field name="VAR" id="Cqa7*OIJK886+(%M}*J:">TreasureChest2</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="`Avh6`wN8;SqRY)([Xp?"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow><block type="screen_image_picker" id="k0V]9hk+uA1)hTL!j_j."><field name="img">img`
+. b b b b b b b b b b b b b b . 
+b e 4 4 4 4 4 4 4 4 4 4 4 4 4 b 
+b e 4 4 4 4 4 4 4 4 4 4 4 4 e b 
+b e e 4 4 4 4 4 4 4 4 4 4 e e b 
+b b b b b b b d d b b b b b b b 
+. b b b b b b c c b b b b b b . 
+b 5 c c c 5 b c c b c 5 5 5 c b 
+b 5 5 c 5 5 c b b c 5 5 5 5 5 b 
+b 5 2 5 9 5 5 5 c 5 3 5 5 9 9 b 
+b 7 5 5 5 9 5 5 5 5 5 2 5 9 5 b 
+b b b b b b b b b b b b b b b b 
+b e e e e e e e e e e e e e e b 
+b e e e e e e e e e e e e e e b 
+b c e e e e e e e e e e e e c b 
+b b b b b b b b b b b b b b b b 
+. b b . . . . . . . . . . b b . 
+`</field></block></value><value name="kind"><shadow type="spritekind" id="qK#=|UP_`VKNlu/s~QPD"><field name="MEMBER">Object</field></shadow></value></block></value><next><block type="spritesetpos" id="?n8MQP,]%)U_Y+)Azb=Q"><value name="sprite"><block type="variables_get" id="Nt$XLjB52N_OMG[Z*DH%"><field name="VAR" id="Cqa7*OIJK886+(%M}*J:">TreasureChest2</field></block></value><value name="x"><shadow type="positionPicker" id="UgQ.3/Ld2?wE.a4a/]B="><field name="index">168</field></shadow></value><value name="y"><shadow type="positionPicker" id="D-*6UW=7n,rkRzRVvPoq"><field name="index">8</field></shadow></value></block></next></block></next></block></next></block></next></block></statement></block></statement></block><block type="spriteshittile" id="SwYV@]KdZ,|CN^ZH3DMj" x="110" y="2950"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom" id="k7Meri@_CtGP|p1WdeM9"><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind" id="!dohEG`QEPXDfG7:LS8@"><field name="MEMBER">Player</field></shadow></value><value name="tile"><shadow type="tileset_tile_picker" id="ZSa.n$+165|Cnn?3lQXv"><field name="tile">myTiles.tile5</field></shadow></value><value name="HANDLER_DRAG_PARAM_location"><shadow type="argument_reporter_custom" id="_/0;L*3p[-B:wBdqa=4E"><mutation typename="tiles.Location"/><field name="VALUE">location</field></shadow></value><statement name="HANDLER"><block type="gameOver" id="ReAp@n*@wT]jv@ZRfus5"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="win"><shadow type="toggleWinLose" id="WqT2yNwL*9zzDx*llTar"><field name="win">true</field></shadow></value></block></statement></block></xml>
